@@ -9,6 +9,10 @@ A timetable app for Android, written in Kotlin tested on Android 11 & 12
   <img src="https://api.citroncode.com/shared/timetable_1.jpg" width="250" alt="Screenshot 1">
 </p>
 
+# Thanks to
+
+- [Dhaval2404](https://github.com/Dhaval2404) for the awesome <a href="https://github.com/Dhaval2404/ColorPicker">color picker library </a>
+
 ## License
 
 Copyright 2022 Marvin Stelter
