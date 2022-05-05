@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/rl_top_bar"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:id="@+id/rl_empty"
+            android:background="@color/grey"
+            android:layout_height="60dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rl_monday"
+            android:background="@color/grey"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/monday_short"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:id="@+id/rl_tuesday"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/tuesday_short"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rl_wednesday"
+            android:background="@color/grey"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/wednesday_short"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/rl_thursday"
+            android:background="@color/grey"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/thursday_short"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:id="@+id/rl_friday"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/friday_short"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/rl_no_content"
+       android:visibility="gone"
+       android:layout_height="match_parent">
+       <TextView
+           android:layout_width="wrap_content"
+           android:textStyle="bold"
+           android:textSize="25sp"
+           android:layout_marginStart="50dp"
+           android:layout_marginEnd="50dp"
+           android:gravity="center"
+           android:layout_above="@id/iv_arrow"
+           android:layout_centerInParent="true"
+           android:text="@string/empty_time_table"
+           android:layout_height="wrap_content"/>
+       <ImageView
+           android:layout_width="200dp"
+           android:id="@+id/iv_arrow"
+           android:adjustViewBounds="true"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginBottom="15dp"
+           android:layout_marginEnd="60dp"
+           android:layout_height="200dp"
+           android:src="@drawable/ic_arrow"/>
+   </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fab_edit"
+        android:layout_marginTop="60dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        app:backgroundTint="@color/purple_500"
+        app:tint="@color/white"
+        android:id="@+id/fab_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_add"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

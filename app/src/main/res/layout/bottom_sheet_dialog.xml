@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+           <TextView
+               android:text="@string/subject"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:layout_marginStart="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_book"
+                android:layout_marginStart="10dp"
+                android:id="@+id/iv_book"
+                app:tint="@color/black"
+                android:layout_alignParentStart="true"
+                android:layout_height="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/et_subject"
+                android:layout_toRightOf="@+id/iv_book"
+                android:hint="@string/subject" />
+        </RelativeLayout>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/teacher"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_teacher"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/iv_teacher"
+                    app:tint="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="40dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/et_teacher"
+                    android:layout_toRightOf="@+id/iv_teacher"
+                    android:hint="@string/teacher" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/room"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_room"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/iv_room"
+                    app:tint="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="40dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/et_room"
+                    android:layout_toRightOf="@+id/iv_room"
+                    android:hint="@string/room" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/day"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/sp_day"
+                    android:layout_height="50dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/hour"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/sp_hour"
+                    android:layout_height="50dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Subject color"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_color"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/iv_color"
+                    app:tint="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="40dp"/>
+
+                <Button
+                    android:backgroundTint="@color/black"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:id="@+id/btn_color"
+                    android:text="@string/select_color"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@+id/iv_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_save"
+            android:text="@string/save"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
