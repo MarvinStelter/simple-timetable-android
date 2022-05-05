@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this,getString(R.string.empty_subject_form),Toast.LENGTH_SHORT).show()
             }
-            //bottomSheetDialog.cancel()
+            bottomSheetDialog.cancel()
         }
 
         bottomSheetDialog.show()
